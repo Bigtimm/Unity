@@ -59,7 +59,14 @@ public class CompletePlayerController : MonoBehaviour {
 			
 			//Update the currently displayed count by calling the SetCountText function.
 			SetCountText ();
+			
 		}
+			
+		if (Input.GetKey("escape"))
+		{
+			Application.Quit();
+		}
+		
 		
 
 	}
