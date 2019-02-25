@@ -39,6 +39,10 @@ public class PlayerController : MonoBehaviour
                 {
                     rb2d.AddForce(new Vector2(0, jumpforce), ForceMode2D.Impulse);
                 }
+                    if (Input.GetKey("escape"))
+                    {
+                        Application.Quit();
+                    }
             }
         }
     }
